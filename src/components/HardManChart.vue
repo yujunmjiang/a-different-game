@@ -124,7 +124,7 @@ export default {
     }
   },
   created() {
-    json('hardware_manufacturing.json')
+    json('./hardware_manufacturing.json')
     .then(data => {
       this.groups = data.map(d => d.device);
       this.series = ["previous", "revised"];
