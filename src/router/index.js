@@ -35,7 +35,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(),
-  base:'/a-different-game',
+  // base:'/a-different-game',
   routes
 })
 
