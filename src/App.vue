@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="nav">
-      <router-link v-slot="{ isActive, isExactActive }" :class="[isActive && 'router-link-active', isExactActive && 'router-link-exact-active']"  to="/">Home</router-link>
+      <router-link v-slot="{ isActive, isExactActive }" :class="[isActive && 'router-link-active', isExactActive && 'router-link-exact-active']"  to="/home">Home</router-link>
       <router-link v-slot="{ isActive, isExactActive }" :class="[isActive && 'router-link-active', isExactActive && 'router-link-exact-active']" to="/getproduction">Production</router-link>
       <router-link v-slot="{ isActive, isExactActive }" :class="[isActive && 'router-link-active', isExactActive && 'router-link-exact-active']" to="/getrevenue">Revenue</router-link>
       <router-link v-slot="{ isActive, isExactActive }" :class="[isActive && 'router-link-active', isExactActive && 'router-link-exact-active']" to="/getcommunity">Community</router-link>

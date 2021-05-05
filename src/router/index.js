@@ -1,35 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
+import GetProduction from '../views/GetProduction.vue';
+import GetRevenue from '../views/GetRevenue.vue';
+import GetCommunity from '../views/GetCommunity.vue';
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     name: 'Home',
     component: Home
   },
   {
     path: '/getproduction',
     name: 'GetProduction',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "getproduction" */ '../views/GetProduction.vue')
+    component: GetProduction
   },
   {
     path: '/getrevenue',
     name: 'GetRevenue',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "getrevenue" */ '../views/GetRevenue.vue')
+    component: GetRevenue
   },
   {
     path: '/getcommunity',
     name: 'GetCommunity',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "getcommunity" */ '../views/GetCommunity.vue')
+    component: GetCommunity
   }
 ]
 
