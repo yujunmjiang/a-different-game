@@ -6,7 +6,7 @@ import GetCommunity from '../views/GetCommunity.vue';
 
 const routes = [
   {
-    path: '/home',
+    path: '/',
     name: 'Home',
     component: Home
   },
